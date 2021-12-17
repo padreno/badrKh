@@ -2,38 +2,47 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #0a192f;
-  color: #fff;
+  color: #8892b0;
+  line-height: 1.3;
   height: 100vh;
-
+  
   .about {
     display: flex;
     flex-direction: column;
+    margin: 10px 50px;
   }
-  .about__Me > ul > li {
-    list-style: none;
-  }
+
   .about__container {
-     display: flex;
-    /* display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 50px; */
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
-  .skills-list li {
-    /* position: relative; */
-    /* margin-bottom: 10 px; */
-    /* padding-left: 10 px; */
-    /* font-family: 100;
-    font-size: 0.9rem; */
+  .skills {
+    display: flex;
   }
-  ul.skills-list li::before {
+  .skills > ul > li {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+ 
+  ul.skills-list1 > li::before {
     content: "▹";
     position: absolute;
-    left: 0px;
+    left: 50px;
     color: #64ffdb;
     font-size: 10px;
     line-height: 12px;
+  }
+  ul.skills-list2 > li::before {
+    content: "▹";
+    position: absolute;
+    left: 240px;
+    color: #64ffdb;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  ul.skills-list2 > li{
+     padding-left: 20px;
   }
   .about img {
     width: 300px;
