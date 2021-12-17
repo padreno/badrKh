@@ -8,10 +8,11 @@ function Header() {
            <nav className="header">
                <img className="header__Logo" src={logo} alt="" />
                <ul className="header__Menu">
-                   <li>About</li>
-                   <li>Experience</li>
-                   <li>projects</li>
-                   <li>Contact</li>
+                   <li>01.About</li>
+                   <li>02.Experience</li>
+                   <li>03.projects</li>
+                   <li>04.Contact</li>
+                   <li>05.Resume</li>
                </ul>
            </nav>
        </HeaderStyled>
