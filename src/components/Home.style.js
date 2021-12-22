@@ -1,36 +1,46 @@
 import styled from "styled-components";
-//import image from "../assets/nature-pic.jpeg";
+
 export const HomePage = styled.div`
   width: 100%;
   height: 100vh;
+  background-color: #0a192f;
   color: #fff;
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image:linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.73) 17%,
-      rgba(0, 0, 0, 0.66) 35%,
-      rgba(0, 0, 0, 0.55) 62%,
-      rgba(0, 0, 0, 0.4) 100%
-    ), */
- 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  .homePage__bio{
-    margin: auto;
-    height: 50%;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; */
-   
+  h1 {
+    color: #64ffda;
+    font-weight: 400;
+    font-size: 16px;
   }
-  .expandMoreicon{
+  h2 {
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    line-height: 1.8;
+    color: #ccd6f6;
+    margin: 0;
+  }
+  h3 {
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    line-height: 1.2;
+    color: #8892b0;
+    margin: 0;
+  }
+
+  .homePage__bio {
+    width: 77%;
+    height: 100%;
+  }
+  .homePage__bio > p {
+    width: 90%;
+    color: #848eac;
+    line-height: 1.5;
+  }
+  .expandMoreicon {
     font-size: 2.2rem;
-     padding-bottom: 30px;
+    padding-top: 130px;
+    padding-bottom: 20px;
   }
 `;

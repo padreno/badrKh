@@ -5,14 +5,15 @@ function Home() {
   return (
     <HomePage>
       <div className="homePage__bio">
-        <h1>Badr Khouzima.</h1>
-        <h2>I build things for the web. </h2>
+        <h1>Hi, my name is</h1>
+        <h2>Badr Khouzima.</h2>
+        <h3>I build things for the web. </h3>
         <p>
-          I am a React web developer, specializing in building React web Apps
+          Started as a self-taught to build thing on the web. Now being trained
+          to build SPA with React. I intruduce myself to the tech industry after proper training at ITAcademy.
         </p>
-        
       </div>
-      <ExpandMoreIcon className="expandMoreicon"/>
+      <ExpandMoreIcon className="expandMoreicon" />
     </HomePage>
   );
 }

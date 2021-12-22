@@ -1,21 +1,18 @@
 import React from "react";
 import { Container } from "./About.style";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function About() {
   return (
-    <Container>
+    <Container id="about">
       <div className="about">
-        <h1>About Me</h1>
+        <h1>01. About Me</h1>
         <div className="about__container">
           <div className="about__Me">
             <p>
-              Hello! My name is Badr and I am a front end web developer. I am
-              about to finish a Recat web developmet course at ItAcademy. I
-              discoved my passion about programming while i was bulding web
-              pages using wordpress, diving into scripts I couldnt figure out
-              what details in them Here I am a web developer aspiring to
-              translate my ideas into coded web Apps. creating things that Here
-              are a few technologies and tool I’ve been working with:
+              Hello! My name is Badr and I am a front end web developer. I am about to finish React web developmet course at ItAcademy by the end of January 2021. My passion about web development go back in 2018 when I was building webpages using wordpress, Tweaking scripts to fit my landing pages.
+              I found myself reading an endless amateur blogs. That's when I realized I can turn this passion into a profesion specializing in coincise tech. That's when I got a web dev course on Udemy and started playing with code for real. 
+              Here are a few technologies and tool I’ve been working with:
             </p>
             <div className="skills">
               <ul className="skills-list1">
@@ -36,6 +33,7 @@ function About() {
           />
         </div>
       </div>
+      <ExpandMoreIcon className="expandMoreicon" />
     </Container>
   );
 }

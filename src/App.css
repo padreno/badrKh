@@ -2,12 +2,12 @@
     /* text-align: center; */
 }
 
-.NavHome__Background {
+/* .NavHome__Background {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%), url(./assets/nature-pic.jpeg);
-}
+} */
 
 .App-logo {
     height: 40vmin;
