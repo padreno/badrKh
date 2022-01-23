@@ -2,6 +2,12 @@
     /* text-align: center; */
 }
 
+body {
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+
+
 /* .NavHome__Background {
     background-size: cover;
     background-repeat: no-repeat;

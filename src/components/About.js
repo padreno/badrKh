@@ -33,7 +33,7 @@ function About() {
           />
         </div>
       </div>
-      <ExpandMoreIcon className="expandMoreicon" />
+    <a href="#experience" className="expandMoreicon"><ExpandMoreIcon /></a>  
     </Container>
   );
 }

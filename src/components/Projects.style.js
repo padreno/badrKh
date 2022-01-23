@@ -42,4 +42,11 @@ export const ProjectContainer = styled.section`
     margin: auto;
     width: 70%;
   }
+  .expandMoreicon {
+    align-self: center;
+    font-size: 2.2rem;
+    padding-top: 130px;
+    padding-bottom: 20px;
+    color: #fff;
+  }
 `;

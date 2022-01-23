@@ -13,11 +13,11 @@ function Projects() {
           <img src="https://picsum.photos/300/200?random=2" alt="" />
           <img src="https://picsum.photos/300/200?random=3" alt="" />
           <img src="https://picsum.photos/300/200?random=7" alt="" />
-          <img src="https://picsum.photos/300/200?random=5" alt="" />
-          <img src="https://picsum.photos/300/200?random=1" alt="" />
         </div>
       </div>
-      <ExpandMoreIcon className="expandMoreicon" />
+      <a href="#contact" className="expandMoreicon">
+        <ExpandMoreIcon />
+      </a>
     </ProjectContainer>
   );
 }

@@ -91,5 +91,6 @@ export const Container = styled.section`
     font-size: 2.2rem;
     padding-top: 130px;
     padding-bottom: 20px;
+    color: #fff;
   }
 `;

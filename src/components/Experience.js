@@ -38,7 +38,9 @@ function Experience() {
           </div>
         </div>
       </div>
-      <ExpandMoreIcon className="expandMoreicon" />
+      <a href="#projects" className="expandMoreicon">
+        <ExpandMoreIcon />
+      </a>
     </ExperienceContainer>
   );
 }

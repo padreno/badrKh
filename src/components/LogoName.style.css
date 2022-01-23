@@ -1,0 +1,31 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0a192f;
+}
+
+#logoName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fill 0.5s ease forwards 2s;
+}
+
+#logoName path:nth-child() {
+    stroke-dasharray: 50px;
+    stroke-dasharray: 50px;
+    animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    to {
+        fill: #64ffda;
+    }
+}

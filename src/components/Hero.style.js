@@ -1,14 +1,24 @@
 import styled from "styled-components";
 
-export const HomePage = styled.div`
+export const HeroSection = styled.div`
   width: 100%;
   height: 100vh;
   background-color: #0a192f;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+
+  .homePage__bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 120px; */
+    width: 77%;
+    height: 100%;
+    /* align-items: center; */
+  }
   h1 {
     color: #64ffda;
     font-weight: 400;
@@ -30,8 +40,6 @@ export const HomePage = styled.div`
   }
 
   .homePage__bio {
-    width: 77%;
-    height: 100%;
   }
   .homePage__bio > p {
     width: 90%;
@@ -39,8 +47,10 @@ export const HomePage = styled.div`
     line-height: 1.5;
   }
   .expandMoreicon {
+    align-self: center;
     font-size: 2.2rem;
-    padding-top: 130px;
-    padding-bottom: 20px;
+    /* padding-top: 130px; */
+    /* padding-bottom: 20px; */
+    color: #fff;
   }
 `;
