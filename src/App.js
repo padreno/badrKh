@@ -12,19 +12,12 @@ function App() {
     const timer = setTimeout(() => {
       console.log("This will run after 1 second!");
       setLoading(false);
-    }, 300);
+    }, 1300);
     return () => clearTimeout(timer);
   }, []);
-  // useEffect(() => {
-  //   if (toggle) {
-  //     console.log("rendered 33");
-  //   }
-  //   console.log("rendered 33");
-  //   // debugger
-  // }, [toggle]);
 
   return (
-    <div className={toggle ? "toggleIsActive" : ""}>
+    <div>
       <BrowserRouter>
         <Routes>
           {loading && <Route path="/" element={<LogoName />} />}

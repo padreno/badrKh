@@ -16,14 +16,6 @@
     border-radius: 4px;
 }
 
-.toggleIsActive::-webkit-scrollbar {
-    display: none;
-}
-
-.lock-scroll {
-    overflow: hidden;
-}
-
 body,
 html {
     overflow-x: hidden;
