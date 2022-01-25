@@ -3,16 +3,15 @@ import styled from "styled-components";
 export const ExperienceContainer = styled.section`
   background-color: #0a192f;
   color: #8892b0;
-  /* line-height: 1.3; */
+  line-height: 1.3;
   /* height: 100vh; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
-  /* border: 3px solid red; */
+
   h1 {
-    margin: 0;
-    padding: 50px 40px 30px;
+    /* padding: 50px 40px 30px; */
     padding-left: 48px;
     margin-left: 40px;
     display: flex;
@@ -22,9 +21,6 @@ export const ExperienceContainer = styled.section`
     width: 87%;
     padding-right: 30px;
     margin-left: 40px;
-
-    /* display: flex; */
-    /* align-items: center; */
   }
   h1:after {
     content: "";
@@ -51,17 +47,17 @@ export const ExperienceContainer = styled.section`
     padding: 20px;
     filter: gray;
     -webkit-filter: grayscale(1);
-    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:hover {
       filter: none;
       -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.01);
-    }
-    @media (max-width: 720px) {
-      filter: none;
+      transform: scale(1.01);
     }
   }
   .tech__Icons__line1 {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .expandMoreicon {
     align-self: center;
@@ -69,5 +65,24 @@ export const ExperienceContainer = styled.section`
     padding-top: 130px;
     padding-bottom: 20px;
     color: #fff;
+  }
+  @media (max-width: 600px) {
+    img {
+      filter: none;
+      width: 35px;
+      height: 55px;
+    }
+    .tech__Icons__line1 {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      padding-left: 0;
+    }
+    p {
+      padding-left: 0;
+    }
   }
 `;

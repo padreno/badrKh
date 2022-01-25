@@ -4,11 +4,10 @@ export const Container = styled.section`
   background-color: #0a192f;
   color: #8892b0;
   line-height: 1.3;
-  /* height: 100vh; */
-  /* border: 3px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 
   .about h1 {
     padding-left: 48px;
@@ -74,13 +73,13 @@ export const Container = styled.section`
 
     filter: gray;
     -webkit-filter: grayscale(1);
-    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:hover {
       filter: none;
       -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
     }
-    /* border: 2px solid #64ffda; */
+
     outline: 4px solid #64ffda;
     outline-offset: 15px;
     transform: translateY(9px) translateX(9px);
@@ -92,5 +91,20 @@ export const Container = styled.section`
     padding-top: 130px;
     padding-bottom: 20px;
     color: #fff;
+  }
+
+  @media screen and (max-width: 600px) {
+    .about__container {
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 0;
+    }
+    .skills {
+      margin-left: -20px;
+    }
+    .about img {
+      width: 200px;
+      filter: none;
+    }
   }
 `;

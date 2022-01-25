@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const HeaderStyled = styled.header`
   height: 65px;
-  border: 3px solid #fff;
+
   margin-bottom: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -17,7 +17,7 @@ export const HeaderStyled = styled.header`
   .header__Logo {
     width: 45px;
     height: 60px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     z-index: 1;
     cursor: pointer;
   }
@@ -126,15 +126,18 @@ export const HeaderStyled = styled.header`
     }
     .header__Menu {
       display: flex;
-
       align-items: center;
     }
     .header__Menu > ol {
       display: flex;
     }
-    nav {
-      background-color: transparent;
+    .header {
+      display: flex;
+      justify-content: space-between;
     }
+    /* nav {
+      background-color: transparent;
+    } */
   }
   @media (max-width: 768px) {
     .hamburger.is-active.header__Menu {
@@ -143,14 +146,17 @@ export const HeaderStyled = styled.header`
       justify-content: space-around;
       align-items: center;
       color: #64ffda;
-      background-color: #0a192f;
+      background-color: #112240;
+      /* filter: blur(8px); */
 
-      opacity: 0.999;
+      backdrop-filter: blur(4px);
       position: fixed;
       right: 0;
       top: 0;
       width: 60%;
       height: 100%;
+      /* cursor: context-menu; */
+      cursor: default;
     }
     .headerMenu__List {
       display: flex;
@@ -159,5 +165,9 @@ export const HeaderStyled = styled.header`
       justify-content: space-between;
       align-items: flex-start;
     }
+  }
+
+  .lock-scroll {
+    overflow-y: hidden;
   }
 `;

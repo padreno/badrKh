@@ -8,14 +8,14 @@ import Contact from "./Contact";
 import Styled from "styled-components";
 
 const LayoutContainer = Styled.div` 
-      /* height: 100vh; */
+   
 `;
 
-function Layout() {
+function Layout({ toggle, setToggle }) {
   return (
     <LayoutContainer>
-      <Header />
-      <Hero />
+      <Header setToggle={setToggle} toggle={toggle} />
+      <Hero toggle={toggle} />
       <About />
       <Experience />
       <Projects />

@@ -29,8 +29,6 @@ function Experience() {
             <img src={css} alt="css" />
             <img src={javascript} alt="javascript" />
             <img src={bootstrap} alt="bootstrap" />
-          </div>
-          <div className="tech__Icons__line2">
             <img src={sass} alt="sass" />
             <img src={react} alt="reactjs" />
             <img src={github} alt="github" />

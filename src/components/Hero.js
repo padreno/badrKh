@@ -1,9 +1,9 @@
 import React from "react";
 import { HeroSection } from "./Hero.style.js";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-function Hero() {
+function Hero({ toggle }) {
   return (
-    <HeroSection>
+    <HeroSection className={toggle ? "toggleIsActive" : ""}>
       <div className="homePage__bio">
         <h1>Hi, my name is</h1>
         <h2>Badr Khouzima.</h2>
