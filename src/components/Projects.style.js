@@ -20,16 +20,27 @@ export const ProjectContainer = styled.section`
     height: 1.5px;
     background-color: #233554;
   }
-  .projects__cards > img {
-    width: 300px;
-    height: 200px;
-    margin-left: 9px;
-    padding-bottom: 18px;
-  }
+
   .projects__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .card > a > img {
+    width: 270px;
+    height: 180px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 270px;
+  }
+  .card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .projects__header {
     display: flex;
@@ -37,6 +48,9 @@ export const ProjectContainer = styled.section`
     align-items: center;
     margin: auto;
     width: 70%;
+  }
+  .card__container > h4 {
+    margin: 0;
   }
   .expandMoreicon {
     align-self: center;

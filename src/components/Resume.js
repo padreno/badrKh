@@ -22,7 +22,8 @@ function Resume() {
         width="100%"
         src={Res}
         title="badr khouzima resume"
-        type="application/pdf"
+        fileExtension=".pdf"
+        mimeType="application/pdf"
       ></iframe>
     </ObjectContainer>
   );

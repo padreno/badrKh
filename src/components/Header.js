@@ -10,6 +10,9 @@ function Header({ setToggle, toggle }) {
   const hamburgerClickHandler = () => {
     setToggle(!toggle);
   };
+  const hashLinkHandler = () => {
+    setToggle(!toggle);
+  };
   useEffect(() => {
     if (toggle) {
       document.body.style.overflow = "hidden";
@@ -46,22 +49,22 @@ function Header({ setToggle, toggle }) {
         >
           <ol className="headerMenu__List">
             <li>
-              <HashLink smooth to="#about">
+              <HashLink smooth to="#about" onClick={hashLinkHandler}>
                 About
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#experience">
+              <HashLink smooth to="#experience" onClick={hashLinkHandler}>
                 Experience
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#projects">
+              <HashLink smooth to="#projects" onClick={hashLinkHandler}>
                 projects
               </HashLink>
             </li>
             <li>
-              <HashLink smooth to="#contact">
+              <HashLink smooth to="#contact" onClick={hashLinkHandler}>
                 Contact
               </HashLink>
             </li>
